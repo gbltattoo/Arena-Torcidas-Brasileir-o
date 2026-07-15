@@ -1,0 +1,3 @@
+"use client";
+import Header from "@/components/Header";import {useArenaStore} from "@/lib/store";
+export default function Page(){const {state}=useArenaStore();return <><Header title="Jogadores"/><main className="content"><div className="player-grid">{state.players.map(p=>{const c=state.clubs.find(x=>x.id===p.clubId);return <article className="player-card" key={p.id}><img className="crest" style={{width:75,height:75}} src={p.photo}/><h3>{p.nickname}</h3><p>{p.name}</p><p className="muted">{c?.name} • {p.position}</p><p>⚽ {p.goals} gols • 🎯 {p.assists} assistências</p></article>})}</div></main></>}

@@ -1,0 +1,2 @@
+import Header from "@/components/Header";
+export default function Page(){return <><Header title="Mata-mata"/><main className="content"><section className="bracket"><div className="round"><h3>Quartas de final</h3><div className="game">Time A × Time B</div><div className="game">Time C × Time D</div></div><div className="round"><h3>Semifinal</h3><div className="game">Vencedor 1 × Vencedor 2</div></div><div className="round"><h3>Final</h3><div className="game">Finalista A × Finalista B</div></div></section></main></>}

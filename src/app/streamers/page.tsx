@@ -1,0 +1,2 @@
+import Header from "@/components/Header";
+export default function Page(){return <><Header title="Streamers"/><main className="content"><article className="card"><div className="card-body"><h2>Programa oficial de Streamers</h2><p>Área preparada para cadastrar streamers, links de lives, metas e benefícios.</p><p className="muted">Integração inicial: 4 lives de 3 horas. Depois, mínimo de 3 lives e 12 horas por semana.</p></div></article></main></>}
